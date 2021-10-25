@@ -1,0 +1,36 @@
+@import '../../styles/variables';
+
+.login {
+  width: 80%;
+  max-width: 500px;
+  height: 92vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+
+  &Form {
+    &Control {
+      margin: 20px 0;
+      width: 100%;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        &:first-of-type {
+          margin-bottom: 16px;
+        }
+      }
+
+      label {
+        color: $color-input-label;
+        margin-bottom: 14px;
+      }
+
+      input {
+        border: 1px solid $color-input-border;
+      }
+    }
+  }
+}

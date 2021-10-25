@@ -1,0 +1,76 @@
+@import '../../styles/variables';
+
+.image {
+  &Preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 50px;
+    text-align: center;
+  }
+
+  &Holder {
+    height: 80%;
+    margin-bottom: 40px;
+
+    img {
+      width: 100%;
+      max-height: 600px;
+      object-fit: cover;
+    }
+  }
+
+  &Comments {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+
+    &Box {
+      display: none;
+      opacity: 0;
+      margin-bottom: 80px;
+      padding: 15px 20px;
+      flex-grow: 1;
+      background-color: white;
+      box-shadow: $box-shadow-default;
+      transition: opacity 500ms;
+
+      &Show {
+        display: block;
+        opacity: 1;
+      }
+
+      .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 15px 22px;
+        background-color: $color-bg-yellow;
+      }
+
+      p {
+        background-color: $color-comment-bg;
+        font-size: $font-size-small;
+        margin-bottom: 15px;
+        padding: 10px;
+        border-radius: 6px;
+      }
+    }
+
+    img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+      align-self: flex-end;
+    }
+  }
+}

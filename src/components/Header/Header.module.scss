@@ -1,0 +1,29 @@
+@import '../../styles/variables';
+
+.header {
+  height: 8vh;
+  background-color: $color-bg-yellow;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &WithMenu {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &Profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    p {
+      margin: 0 10px;
+    }
+  }
+}

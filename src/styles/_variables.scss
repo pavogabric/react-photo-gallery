@@ -1,0 +1,36 @@
+// Typography
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap');
+
+$default-font: 'Roboto', sans-serif;
+$base-font-size: 10px;
+
+$font-weight-light: 500;
+$font-weight-normal: 700;
+$font-weight-bold: 900;
+
+$font-size-small: 1.4rem;
+$font-size-normal: 1.8rem;
+$font-size-large: 2.4rem;
+$font-size-extra-large: 3.6rem;
+$font-size-button: 1.6rem;
+
+// Colors
+$color-bg-default: #ffffff;
+$color-bg-yellow: #fec210;
+$color-bg-grey: #c4c4c4;
+
+$color-heading: #000000;
+$color-paragraph: #000000;
+
+$color-input-label: #2d3748;
+$color-input-border: #a0aec0;
+$color-input-search-label: #a0aec0;
+$color-input-search-border: #abafae;
+
+$color-button-default: #277a7f;
+$color-button-default-hover: #2f9aa0;
+$color-button-text: #ffffff;
+
+$color-comment-bg: #C4C4C4;
+
+$box-shadow-default: 0px 0px 10px rgba(0, 0, 0, 0.25);
